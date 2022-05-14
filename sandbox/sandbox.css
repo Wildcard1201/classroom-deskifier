@@ -35,4 +35,6 @@ body {
 
 .desk p {
     font-size: 1.5em;
+    color: #333;
+    text-shadow: 1px 1px #eee;
 }
