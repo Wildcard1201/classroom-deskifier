@@ -27,6 +27,7 @@ body {
     margin: 5px;
     border: 2px solid #888;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px #333;
     width: 100px;
     height: 80px;
     background-color: #eee;
