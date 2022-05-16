@@ -13,11 +13,29 @@ body {
 }
 
 .desk-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-basis: 25%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px 100px;
+    grid-template-rows: 100px, 100px, 100px;
+}
+
+.desk1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.desk2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.desk3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.desk4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 .desk {
