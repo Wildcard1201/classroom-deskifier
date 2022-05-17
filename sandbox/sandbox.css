@@ -5,17 +5,45 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     font-size: 16px;
 }
 
+header {
+    text-align:  center;
+}
+
+main {
+    height: 100%;
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .desk-container {
     display: grid;
-    grid-template-columns: 100px, 100px, 100px 100px;
-    grid-template-rows: 100px, 100px, 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.desk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #888;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #333;
+    width: 90px;
+    height: 80px;
+    background-color: #eee;
+}
+
+.desk:hover {
+    background-color: #ffa500;
 }
 
 .desk1 {
@@ -38,18 +66,6 @@ body {
     grid-column-end: 5;
 }
 
-.desk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    border: 2px solid #888;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #333;
-    width: 100px;
-    height: 80px;
-    background-color: #eee;
-}
 
 .desk p {
     font-size: 1.5em;
