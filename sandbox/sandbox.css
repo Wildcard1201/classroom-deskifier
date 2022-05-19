@@ -22,12 +22,16 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
+
+    border: 1px solid green;
 }
 
 .desk-container {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
+
+    border: 1px solid red;
 }
 
 .desk {
