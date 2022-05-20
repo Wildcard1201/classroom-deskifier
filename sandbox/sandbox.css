@@ -30,10 +30,11 @@ main {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
-    /* justify-content: center;  */
+    text-align: center;
     align-items: center;
 
-    border: 1px solid red;
+    background-color: #eee;
+    border: 1px solid green;
 }
 
 .desk {
