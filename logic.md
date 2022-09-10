@@ -28,3 +28,6 @@ Student-specific criteria that affect seating placement
 
 ## Features and Options
 - 'Lock' button/manual student assignment
+- History feature to remember previous layouts
+- Use history to prevent repeat layouts
+- Add 'landmarks' to layout for room orientation, i.e. teacher desk, door, windows, tables, counters, etc.
