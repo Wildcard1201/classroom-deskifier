@@ -31,3 +31,22 @@ Student-specific criteria that affect seating placement
 - History feature to remember previous layouts
 - Use history to prevent repeat layouts
 - Add 'landmarks' to layout for room orientation, i.e. teacher desk, door, windows, tables, counters, etc.
+
+---
+
+## Technical
+
+### Initial Plan
+
+#### CSS Grid
+- Use CSS grid to create a large interactive grid space to represent the classroom
+- Each grid cell can be either 'active' or 'inactive'
+- Active cells represent desks, inactive cells represent open space
+- Pre-selected layouts would automatically set the state of cells appropriately
+- In custom mode, user can click cells to toggle their states, allowing for any custom layout
+
+#### JS Logic
+*First thoughts, subject to change*
+- Create two arrays of students, one for students with restrictions, one for students without
+- Iterate though the restricted students first, placing them appropriately throughout the classroom
+- Iterate through the unrestricted array next, filling in the remaining spots
