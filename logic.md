@@ -50,3 +50,9 @@ Student-specific criteria that affect seating placement
 - Create two arrays of students, one for students with restrictions, one for students without
 - Iterate though the restricted students first, placing them appropriately throughout the classroom
 - Iterate through the unrestricted array next, filling in the remaining spots
+
+*Desks/Groups*
+- Desks can either be single entities, in such arrangements as spaced columns, etc, or they can be organized in logical groups in the case of pods/tables
+- This must be taken into account when sorting students
+- Example - for single-entity desks, students' criteria is only compared against one another to determine immediately adjacent conflicts
+- For logical groups, the entire group's criteria must be compared in order to prevent group-wide conflicts
