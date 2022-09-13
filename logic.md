@@ -46,7 +46,7 @@ Student-specific criteria that affect seating placement
 - In custom mode, user can click cells to toggle their states, allowing for any custom layout
 
 #### JS Logic
-*First thoughts, subject to change*
+*Student Sorting*
 - Create two arrays of students, one for students with restrictions, one for students without
 - Iterate though the restricted students first, placing them appropriately throughout the classroom
 - Iterate through the unrestricted array next, filling in the remaining spots
