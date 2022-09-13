@@ -56,3 +56,12 @@ Student-specific criteria that affect seating placement
 - This must be taken into account when sorting students
 - Example - for single-entity desks, students' criteria is only compared against one another to determine immediately adjacent conflicts
 - For logical groups, the entire group's criteria must be compared in order to prevent group-wide conflicts
+
+#### Generating the Workspace
+- Workspace will be a grid background which will be achieved by using a CSS grid with visible borders
+- This provides the framework for laying out the desks, as well as a visual aid for the user
+- Workspaces may be different sizes for different classrooms
+- Ideally would like to generate the grid via JS, building off a user-entered number for dimensions/size
+- User could enter values such as width and height, which would be integers representing the desired number of cells, and size/shape, which would determine the size and shape of the deks being used
+- These values would define variables which would in turn be used to build out the CSS grid to the desired specifications
+- Preset values would also have to be determined so that a good starting point is selected by default, most users would hopefully not need to change values at all
