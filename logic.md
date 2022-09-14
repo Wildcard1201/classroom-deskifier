@@ -65,3 +65,16 @@ Student-specific criteria that affect seating placement
 - User could enter values such as width and height, which would be integers representing the desired number of cells, and size/shape, which would determine the size and shape of the deks being used
 - These values would define variables which would in turn be used to build out the CSS grid to the desired specifications
 - Preset values would also have to be determined so that a good starting point is selected by default, most users would hopefully not need to change values at all
+
+## Logic Flow
+For a new user
+1. Click New Classroom
+2. Choose between preset layouts and custom
+3. Enter student information
+4. Enter optional manual seating choices
+5. Choose sorting type
+6. Sort
+7. Review results
+8. If not satisfied, optionally lock any students into place
+9. Sort again
+10. Repeat until satisfied with seating chart
