@@ -35,8 +35,35 @@ main {
 }
 
 .desk {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+
+
     border: 1px solid gray;
     /* height: auto; */
     padding: 3px;
     background-color: azure;
+}
+
+.desk-name {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.student-name {
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.desk-controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desk-btn {
+    border-radius: 3px;
+
+    padding: 2px;
 }
