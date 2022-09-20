@@ -59,11 +59,13 @@ main {
 
 .desk-controls {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .desk-btn {
     border-radius: 3px;
 
     padding: 2px;
+
+    cursor: pointer;
 }
