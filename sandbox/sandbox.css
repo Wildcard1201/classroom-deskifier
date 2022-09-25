@@ -19,8 +19,8 @@ main {
 
 .room {
     border: 3px solid gray;
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
 }
 
