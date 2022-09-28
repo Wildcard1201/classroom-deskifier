@@ -74,4 +74,5 @@ main {
 
 .desk-btn:hover {
     border-color: cyan;
+    color: darkcyan;
 }
