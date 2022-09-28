@@ -71,3 +71,7 @@ main {
 
     cursor: pointer;
 }
+
+.desk-btn:hover {
+    border-color: cyan;
+}
