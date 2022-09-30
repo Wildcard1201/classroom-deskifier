@@ -72,6 +72,6 @@ main {
 }
 
 .desk-btn:hover {
-    border-color: cyan;
-    color: darkcyan;
+    border-color: orange;
+    color: darkorange;
 }
