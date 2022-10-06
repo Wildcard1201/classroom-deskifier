@@ -9,7 +9,8 @@ function Student(name, vision, avoid, prefer, academic) {
     this.academic = academic;               // academic tier 1-3
 }
 
-const Bob = new Student('Bob', 'near', 'Steve', 'null', '2')
+const Bob = new Student('Bob', 'near', 'Steve', null, 2)
+const Rachel = new Student('Rachel', null, null, 'Beth', 3)
 
 */
 
