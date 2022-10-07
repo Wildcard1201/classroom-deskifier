@@ -1,5 +1,5 @@
-/* 
-Sample student Object
+
+// Sample student Object
 
 function Student(name, vision, avoid, prefer, academic) {
     this.name = name;                       // student name
@@ -9,8 +9,12 @@ function Student(name, vision, avoid, prefer, academic) {
     this.academic = academic;               // academic tier 1-3
 }
 
-const Bob = new Student('Bob', 'near', 'Steve', null, 2)
-const Rachel = new Student('Rachel', null, null, 'Beth', 3)
+const bob = new Student('Bob', 'near', 'Steve', null, 2)
+const rachel = new Student('Rachel', null, null, 'Beth', 3)
+const steve = new Student('Steve', null, 'Bob', null, 1)
 
-*/
+const students = [];
 
+students.push(bob, rachel)
+
+console.log(students)
