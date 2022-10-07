@@ -18,3 +18,7 @@ const students = [];
 students.push(bob, rachel)
 
 console.log(students)
+
+const rosterDisplay= document.getElementById('roster')
+
+rosterDisplay.innerHTML = 'test'
