@@ -1,24 +1,35 @@
 
 // Sample student Object
 
-function Student(name, vision, avoid, prefer, academic) {
-    this.name = name;                       // student name
-    this.vision_pref = vision;              // vision-based distance preference
-    this.student_avoid = avoid;             // student to avoid sitting by
-    this.student_prefer = prefer;           // preferred student to sit by
-    this.academic = academic;               // academic tier 1-3
+class Student {
+    constructor(name, vision, avoid) {
+        this.name = name; // student name
+        this.vision_pref = vision; // vision-based distance preference
+        this.student_avoid = avoid; // student to avoid sitting by
+    }
 }
 
-const bob = new Student('Bob', 'near', 'Steve', null, 2)
-const rachel = new Student('Rachel', null, null, 'Beth', 3)
-const steve = new Student('Steve', null, 'Bob', null, 1)
+const bob = new Student('Bob', 'near', 'Steve')
+const rachel = new Student('Rachel', null, null)
+const steve = new Student('Steve', null, 'Bob')
+const jill = new Student('Jill', 'far', null)
+const kenny = new Student('Kenny', null, 'Bob')
+const beth = new Student('Beth', null, null)
 
 const students = [];
 
-students.push(bob, rachel)
+students.push(bob, rachel, steve, jill, kenny, beth)
 
 console.log(students)
 
 const rosterDisplay= document.getElementById('roster')
 
 rosterDisplay.innerHTML = 'test'
+
+// these are the two desk pods that the students should end up in
+const podOne = []
+const podTwo = []
+
+// sorting order:  1. vision, 2. avoidance
+
+students
