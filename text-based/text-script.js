@@ -24,7 +24,9 @@ console.log(students)
 
 const rosterDisplay= document.getElementById('roster')
 
-rosterDisplay.innerHTML = 'test'
+rosterDisplay.innerHTML += students.forEach((e) => {
+    return (`${e.name} ${e.vision_pref} ${e.student_avoid}`);
+})
 
 // these are the two desk pods that the students should end up in
 const podOne = []   // front of room - should include Bob (vision near)
