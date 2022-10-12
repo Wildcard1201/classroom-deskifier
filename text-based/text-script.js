@@ -27,7 +27,7 @@ const rosterDisplay= document.getElementById('roster')
 let rosterRaw = ''
 
 students.forEach((e) => {
-    rosterRaw += `Name: ${e.name}, Vision Preference: ${e.vision_pref}, Avoid: ${e.student_avoid} </br>`
+    rosterRaw += `Name: ${e.name} ---> Vision Preference: ${e.vision_pref} /// Avoid: ${e.student_avoid} </br>`
 })
 
 
