@@ -1,5 +1,5 @@
 
-// Sample student Object
+// student object
 
 class Student {
     constructor(name, vision, avoid) {
@@ -17,17 +17,32 @@ const kenny = new Student('Kenny', null, 'Bob')
 const beth = new Student('Beth', null, null)
 
 const students = [];
-
 students.push(bob, rachel, steve, jill, kenny, beth)
-
 console.log(students)
 
 const rosterDisplay= document.getElementById('roster')
 
-rosterDisplay.innerHTML += students.forEach((e) => {
-    // return (`${e.name} ${e.vision_pref} ${e.student_avoid}`);
+
+
+const roster_raw = students.forEach((e) => {
     console.log(`Name: ${e.name} Vision: ${e.vision_pref} Avoid: ${e.student_avoid}`)
+    return (`${e.name} ${e.vision_pref} ${e.student_avoid}`)
 })
+
+const testArray = [
+    {name: 'Student1'},
+    {name: 'Student2'},
+    {name: 'Student3'},
+    {name: 'Student4'}
+]
+
+let testDisplay = ''
+
+testArray.forEach((e) => {
+    testDisplay += e.name
+})
+
+rosterDisplay.innerHTML = 'display ' + testDisplay
 
 // these are the two desk pods that the students should end up in
 const podOne = []   // front of room - should include Bob (vision near)
