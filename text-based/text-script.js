@@ -24,25 +24,15 @@ const rosterDisplay= document.getElementById('roster')
 
 
 
-const roster_raw = students.forEach((e) => {
-    console.log(`Name: ${e.name} Vision: ${e.vision_pref} Avoid: ${e.student_avoid}`)
-    return (`${e.name} ${e.vision_pref} ${e.student_avoid}`)
+let rosterRaw = ''
+
+students.forEach((e) => {
+    rosterRaw += `Name: ${e.name}, Vision Preference: ${e.vision_pref}, Avoid: ${e.student_avoid} </br>`
 })
 
-const testArray = [
-    {name: 'Student1'},
-    {name: 'Student2'},
-    {name: 'Student3'},
-    {name: 'Student4'}
-]
 
-let testDisplay = ''
 
-testArray.forEach((e) => {
-    testDisplay += e.name
-})
-
-rosterDisplay.innerHTML = 'display ' + testDisplay
+rosterDisplay.innerHTML = rosterRaw
 
 // these are the two desk pods that the students should end up in
 const podOne = []   // front of room - should include Bob (vision near)
