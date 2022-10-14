@@ -39,3 +39,4 @@ const podTwo = []   // back of room - Should include Kenny (avoidance of Bob) an
 
 // sorting order:  1. vision, 2. avoidance
 
+
