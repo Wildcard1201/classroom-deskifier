@@ -29,6 +29,14 @@ students.forEach((e) => {
 })
 rosterDisplay.innerHTML = rosterRaw
 
+// get the sorting method
+const checked = () => {
+    console.log(document.querySelector('[type=radio]' + '[checked]'))
+
+}
+
+checked()
+
 
 
 // these are the two desk pods that the students should end up in
