@@ -17,17 +17,21 @@
 
         </div>
         <!-- sort method switch -->
-        <div id="sorting">
+        <form id="sorting">
             <h3>Select Sort Method</h3>
-            <input type="radio" name="sort" id="alphabetical" value="alphabetical" checked>
-            <label for="sort">Alphabetical</label>
+
+            <label for="alphabetical">
+                <input type="radio" name="sort" id="alphabetical" value="alphabetical" checked>Alphabetical
+            </label>
 
             <input type="radio" name="sort" id="random" value="random">
             <label for="sort">Random</label>
 
             <input type="radio" name="sort" id="number" value="number">
             <label for="sort">Class Number</label>
-        </div>
+
+            <button type="button" id="test-btn">Test</button>
+        </form>
 
         <!-- output tables -->
         <h3>Output</h3>

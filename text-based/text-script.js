@@ -30,22 +30,11 @@ students.forEach((e) => {
 rosterDisplay.innerHTML = rosterRaw
 
 // get the sorting method
-const sortButtons = () => {
-    console.log(document.querySelectorAll('[name=sort'))
-}
-
-const checked = () => {
-    console.log(document.querySelector('[type=radio]' + '[checked]'))
-}
-
-sortButtons().forEach((e) => {
-    e.addEventListener('click', checked)
-})
+const sortButtons = document.querySelectorAll('input[name="sort"]')
 
 
 
 
-// checked()
 
 
 
