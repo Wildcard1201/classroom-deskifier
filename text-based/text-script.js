@@ -31,7 +31,13 @@ rosterDisplay.innerHTML = rosterRaw
 
 // get the sorting method
 const sortButtons = document.querySelectorAll('input[name="sort"]')
+const testButton = document.getElementById('test-btn')
 
+testButton.addEventListener('click', test)
+
+function test() {
+    alert('you hit the test button')
+}
 
 
 
