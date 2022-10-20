@@ -48,6 +48,14 @@ function test() {
     console.log('Sort value: ' + sortValue)
 }
 
+const globalTestBtn = document.getElementById('test-btn-global')
+globalTestBtn.addEventListener('click', bigTest)
+
+function bigTest() {
+    console.log('Global sort test: ' + sortValue)
+}
+
+
 
 
 
