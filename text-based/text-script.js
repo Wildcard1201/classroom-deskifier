@@ -35,8 +35,17 @@ const testButton = document.getElementById('test-btn')
 
 testButton.addEventListener('click', test)
 
+let sortValue
 function test() {
-    alert('you hit the test button')
+    console.log('you hit the test button')
+
+    for (let i = 0; i < sortButtons.length; i++) {
+        if (sortButtons[i].checked) {
+        sortValue = sortButtons[i].value;
+        break
+        }
+    }
+    console.log('Sort value: ' + sortValue)
 }
 
 
