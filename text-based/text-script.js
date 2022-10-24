@@ -55,9 +55,14 @@ function bigTest() {
     console.log('Global sort test: ' + sortValue)
 }
 
+const goButton = document.getElementById('btn-sort')
+goButton.addEventListener('click', go)
 
+function go() {
 
-
+    console.log('Pod one: ' + podOne)
+    console.log('Pod two: ' + podTwo)
+}
 
 
 
