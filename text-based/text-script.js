@@ -59,6 +59,17 @@ const goButton = document.getElementById('btn-sort')
 goButton.addEventListener('click', go)
 
 function go() {
+    students.forEach( (s) => {
+        if(s.name === 'Beth') {
+            podOne.push(s)
+        } else {
+            podTwo.push(s)
+        }
+    })
+
+    document.getElementById('output').innerHTML = `Pod One: ${podOne}
+    Pod Two: ${podTwo}`
+
 
     console.log('Pod one: ' + podOne)
     console.log('Pod two: ' + podTwo)
@@ -67,8 +78,8 @@ function go() {
 
 
 // these are the two desk pods that the students should end up in
-const podOne = []   // front of room - should include Bob (vision near)
-const podTwo = []   // back of room - Should include Kenny (avoidance of Bob) and Jill (vision far)
+var podOne = []   // front of room - should include Bob (vision near)
+var podTwo = []   // back of room - Should include Kenny (avoidance of Bob) and Jill (vision far)
 // Rachel, Steve, and Beth should be randomly assigned to any remaining seats
 // each pod should have exactly three students
 
