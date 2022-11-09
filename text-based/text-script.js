@@ -25,7 +25,7 @@ console.log(students)
 const rosterDisplay= document.getElementById('roster')
 let rosterRaw = ''
 students.forEach((e) => {
-    rosterRaw += `Name: ${e.name} ---> Vision Preference: ${e.vision_pref} Avoid: ${e.student_avoid} </br>`
+    rosterRaw += `Name: ${e.name}   ---> Vision Preference: ${e.vision_pref} Avoid: ${e.student_avoid} </br>`
 })
 rosterDisplay.innerHTML = rosterRaw
 
@@ -66,9 +66,19 @@ function go() {
             podTwo.push(s)
         }
     })
+    let podOneRaw = ''
+    let podTwoRaw = ''
 
-    document.getElementById('output').innerHTML = `Pod One: ${podOne}
-    Pod Two: ${podTwo}`
+    podOne.forEach((e) => {
+        podOneRaw += `Name: ${e.name}   ---> Vision Preference: ${e.vision_pref} Avoid: ${e.student_avoid} </br>`
+    })
+    podTwo.forEach((e) => {
+        podTwoRaw += `Name: ${e.name}   ---> Vision Preference: ${e.vision_pref} Avoid: ${e.student_avoid} </br>`
+    })
+
+
+    document.getElementById('output').innerHTML = `Pod One: </br>${podOneRaw} </br>
+    Pod Two: </br>${podTwoRaw}`
 
 
     console.log('Pod one: ' + podOne)
